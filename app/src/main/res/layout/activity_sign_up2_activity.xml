@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".ui.sign_in.SignUp2_activity">
+
+    <EditText
+        android:id="@+id/fact"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Something funny"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle5" />
+
+    <TextView
+        android:id="@+id/textViewTitle5"
+        android:layout_width="320dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:text="Funfact"
+        android:textColor="#F80F0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diets" />
+
+    <EditText
+        android:id="@+id/diets"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Diets"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="320dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="150dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:text="Allergies, vegetarian or so?"
+        android:textColor="#F80F0000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/Save_button"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_standart_color"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#0C0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fact"
+        app:layout_constraintTop_toBottomOf="@+id/fact" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_standart_color"
+        android:text="@android:string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#090000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fact"
+        app:layout_constraintTop_toBottomOf="@+id/fact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

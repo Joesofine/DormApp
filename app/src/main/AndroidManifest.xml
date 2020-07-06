@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dormapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.sign_in.SigUp_picture"></activity>
+        <activity
+            android:name=".ui.login.SignUp_picture"
+            android:label="@string/title_activity_sign_up_picture" />
+        <activity
+            android:name=".ui.sign_in.SignUp3_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sign_in.SignUp2_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sign_in.SignUp_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sign_in.Forgotten_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.sign_in.SignIn_activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
