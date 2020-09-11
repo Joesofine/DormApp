@@ -17,18 +17,19 @@ public class Forgotten_activity  extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_in_activity);
+        setContentView(R.layout.forgot_password_activity);
 
         send = findViewById(R.id.send);
-
 
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignIn_activity.class);
+                Intent intent = new Intent(getApplicationContext(), Forgotten_activity.class);
                 startActivity(intent);
             }
         });
+
+
     }
 }

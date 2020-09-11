@@ -11,9 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.sign_in.SigUp_picture"></activity>
         <activity
-            android:name=".ui.login.SignUp_picture"
-            android:label="@string/title_activity_sign_up_picture" />
-        <activity
             android:name=".ui.sign_in.SignUp3_activity"
             android:screenOrientation="portrait" />
         <activity

@@ -18,25 +18,42 @@
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         android:textColor="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle6" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/prompt_email"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/hint"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewTitle6"
         android:layout_width="320dp"
         android:layout_height="31dp"
-        android:layout_marginTop="10dp"
         android:paddingStart="5dp"
-        android:paddingLeft="5dp"
         android:text="Choose Password"
         android:textColor="#F80F0000"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/diets2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diets" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/email5"
@@ -48,49 +65,24 @@
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         android:textColor="@color/hint"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle3" />
 
-    <EditText
-        android:id="@+id/diets"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/hint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
-
-    <ImageView
-        android:id="@+id/downloaded_picture"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="320dp"
         android:layout_height="31dp"
-        android:layout_marginTop="10dp"
         android:paddingStart="5dp"
-        android:paddingLeft="5dp"
         android:text="@string/prompt_email"
         android:textColor="#F80F0000"
-        android:textSize="20sp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/downloaded_picture" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewTitle3"
@@ -98,10 +90,9 @@
         android:layout_height="31dp"
         android:layout_marginTop="10dp"
         android:paddingStart="5dp"
-        android:paddingLeft="5dp"
         android:text="Repeat password"
         android:textColor="#F80F0000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,7 +107,7 @@
         android:textAllCaps="false"
         android:textColor="#0C0000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/email5"
         app:layout_constraintTop_toBottomOf="@+id/email5" />
 
     <Button
@@ -128,16 +119,7 @@
         android:textAllCaps="false"
         android:textColor="#090000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/email5"
         app:layout_constraintTop_toBottomOf="@+id/email5" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="1078dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

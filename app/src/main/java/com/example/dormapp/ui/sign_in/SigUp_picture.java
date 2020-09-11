@@ -16,7 +16,7 @@ public class SigUp_picture extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sig_up_picture);
+        setContentView(R.layout.activity_sign_up2);
 
         next = findViewById(R.id.Save_button);
         back = findViewById(R.id.Back);

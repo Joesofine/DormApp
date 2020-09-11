@@ -8,12 +8,8 @@ import android.widget.EditText;
 
 import com.example.dormapp.Main;
 import com.example.dormapp.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 public class SignIn_activity extends AppCompatActivity {
 
@@ -23,7 +19,7 @@ public class SignIn_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sign_in_activity);
+        setContentView(R.layout.activity_sign_in);
 
         SignUp = findViewById(R.id.SignUpButton);
         SignIn = findViewById(R.id.signIpButton);

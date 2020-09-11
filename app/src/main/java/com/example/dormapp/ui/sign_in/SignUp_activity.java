@@ -18,7 +18,7 @@ public class SignUp_activity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup_activity);
+        setContentView(R.layout.activity_sign_up1);
 
         next = findViewById(R.id.Save_button);
         cancel = findViewById(R.id.Back);
