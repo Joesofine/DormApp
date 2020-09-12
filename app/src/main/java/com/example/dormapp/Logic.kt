@@ -24,10 +24,10 @@ public class Logic {
         }
         return sb.toString()
     }
-    fun getUrlAsString(url: String): String {
+    /*fun getUrlAsString(url: String): String {
         val client = HttpClient(Android) {
         }
         return client.get<String>(url)
-    }
+    }*/
 
 }
