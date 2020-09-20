@@ -30,6 +30,7 @@ class adapter_rules (context: Context, arr: Array<String>) : ArrayAdapter<String
         }
         viewHolder.rule?.setText(ruleArr[position])
         viewHolder.number!!.text = (position + 1).toString()
+
         return convertView
     }
 
