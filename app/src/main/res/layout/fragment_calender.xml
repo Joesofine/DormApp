@@ -39,23 +39,23 @@
 
     </LinearLayout>
 
-   <HorizontalScrollView
+    <HorizontalScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
 
-       <LinearLayout
-           android:id="@+id/linTest"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_marginTop="0dp"
-           android:background="@color/ButtonDarkDark"
-           android:orientation="horizontal">
-           <!--
+        <LinearLayout
+            android:id="@+id/linTest"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/ButtonLight"
+            android:orientation="horizontal">
+            <!--
                        <Button
                            android:id="@+id/jan"
                            android:layout_width="100dp"
@@ -152,16 +152,8 @@
                            android:text="december"
                            android:textColor="#F8090909" />
                        -->
-       </LinearLayout>
+        </LinearLayout>
     </HorizontalScrollView>
-
-    <LinearLayout
-        android:id="@+id/test"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scroll" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
